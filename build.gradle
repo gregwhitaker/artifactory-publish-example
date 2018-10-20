@@ -1,9 +1,22 @@
 plugins {
-    
+    id 'com.gradle.build-scan' version '1.16'
+}
+
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+    publishAlways()
 }
 
 allprojects {
+    project.version = project.hasProperty('versionQualifier') ? project.property('versionQualifier') : ''
+
     ext {
-        springBootDependenciesVersion = '2.0.5.RELEASE'
+        springBootBomVersion = '2.0.5.RELEASE'
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
     }
 }

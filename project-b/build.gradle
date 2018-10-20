@@ -5,14 +5,9 @@ plugins {
 
 sourceCompatibility = 1.8
 
-repositories {
-    jcenter()
-    mavenCentral()
-}
-
 dependencyManagement {
     imports {
-        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootDependenciesVersion}"
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootBomVersion}"
     }
 }
 
