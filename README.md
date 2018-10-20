@@ -19,7 +19,7 @@ Follow the steps below to deploy the artifacts to your running Artifactory insta
     * artifactoryUsername - Username of Artifactory deployer
     * artifactoryPassword - Password of Artifactory deployer
     
-2. Run the following command to deploy the artifacts to Artifactory:
+2. Run the following command to deploy the artifacts to Artifactory using the `com.jfrog.artifactory` plugin:
 
         ./gradlew clean build artifactoryPublish
         
