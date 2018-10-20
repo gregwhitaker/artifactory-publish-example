@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.+"
+    }
+}
+
 plugins {
     id 'com.gradle.build-scan' version '1.16'
     id 'net.saliman.properties' version '1.4.6'
@@ -12,10 +21,7 @@ buildScan {
 subprojects {
     apply plugin: 'net.saliman.properties'
 
-    apply from: "${rootProject.projectDir}/gradle/artifactory.gradle"
-    apply from: "${rootProject.projectDir}/gradle/java.gradle"
-
-    project.version = project.hasProperty('versionQualifier') ? project.property('versionQualifier') : ''
+    project.version += rootProject.hasProperty('versionQualifier') ? '-' + rootProject.property('versionQualifier') : ''
 
     repositories {
         jcenter()
