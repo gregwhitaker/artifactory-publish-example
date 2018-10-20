@@ -1,5 +1,6 @@
 plugins {
     id 'com.gradle.build-scan' version '1.16'
+    id 'net.saliman.properties' version '1.4.6'
 }
 
 buildScan {
@@ -8,7 +9,10 @@ buildScan {
     publishAlways()
 }
 
-allprojects {
+subprojects {
+    apply plugin: 'net.saliman.properties'
+    apply from: "${rootProject.projectDir}/gradle/artifactory.gradle"
+    
     project.version = project.hasProperty('versionQualifier') ? project.property('versionQualifier') : ''
 
     ext {
