@@ -15,12 +15,12 @@ subprojects {
     
     project.version = project.hasProperty('versionQualifier') ? project.property('versionQualifier') : ''
 
-    ext {
-        springBootBomVersion = '2.0.5.RELEASE'
-    }
-
     repositories {
         jcenter()
         mavenCentral()
+    }
+    
+    ext {
+        springBootBomVersion = '2.0.5.RELEASE'
     }
 }
