@@ -2,7 +2,7 @@ apply plugin: 'com.jfrog.artifactory'
 
 artifactory {
     publish {
-        contextUrl = 'https://artifactory.netifiinc.com/artifactory'
+        contextUrl = "${artifactoryBaseUrl}/artifactory"
 
         repository {
             repoKey = version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local'

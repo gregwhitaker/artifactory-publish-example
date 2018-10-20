@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 publishing {
     repositories {
         maven {
-            url = version.contains('SNAPSHOT') ? 'https://artifactory.netifiinc.com/artifactory/libs-snapshot-local' : 'https://artifactory.netifiinc.com/artifactory/libs-release-local'
+            url = version.contains('SNAPSHOT') ? "${artifactoryBaseUrl}/artifactory/libs-snapshot-local" : "${artifactoryBaseUrl}/artifactory/libs-release-local"
 
             credentials {
                 username = project.property('artifactoryUsername')
