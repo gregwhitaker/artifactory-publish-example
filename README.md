@@ -1,4 +1,5 @@
 # artifactory-publish-example
+[![Build Status](https://travis-ci.org/gregwhitaker/artifactory-publish-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/artifactory-publish-example)
 
 An example of deploying artifacts of a multi-module Gradle project to Artifactory.
 
@@ -15,9 +16,15 @@ Follow the steps below to deploy the artifacts to your running Artifactory insta
 
     These properties can be set as `-P` parameters or passed in via `gradle.properties` or `gradle-local.properties`.
     
-    * artifactoryBaseUrl - Url of Artifactory (http://artifactory.mydomain.com)
-    * artifactoryUsername - Username of Artifactory deployer
-    * artifactoryPassword - Password of Artifactory deployer
+    * `artifactoryBaseUrl` - Url of Artifactory (http://artifactory.mydomain.com)
+    * `artifactoryUsername` - Username of Artifactory deployer
+    * `artifactoryPassword` - Password of Artifactory deployer
+    
+    If setting these properties via environment variables you need to use the following variable names:
+    
+    * `ORG_GRADLE_PROJECT_artifactoryBaseUrl`
+    * `ORG_GRADLE_PROJECT_artifactoryUsername`
+    * `ORG_GRADLE_PROJECT_artifactoryPassword`
     
 2. Run the following command to deploy the artifacts to Artifactory using the `com.jfrog.artifactory` plugin:
 
