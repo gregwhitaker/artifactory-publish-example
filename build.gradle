@@ -1,0 +1,9 @@
+plugins {
+    
+}
+
+allprojects {
+    ext {
+        springBootDependenciesVersion = '2.0.5.RELEASE'
+    }
+}

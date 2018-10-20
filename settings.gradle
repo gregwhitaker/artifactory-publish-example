@@ -1,0 +1,4 @@
+rootProject.name = 'artifactory-publish-example'
+include 'project-a'
+include 'project-b'
+
