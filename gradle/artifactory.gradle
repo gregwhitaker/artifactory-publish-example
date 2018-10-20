@@ -1,3 +1,20 @@
+
+//apply plugin: 'maven'
+//apply plugin: 'maven-publish'
+//
+//publishing {
+//    repositories {
+//        maven {
+//            url = version.contains('SNAPSHOT') ? 'https://artifactory.netifiinc.com/artifactory/libs-snapshot-local' : 'https://artifactory.netifiinc.com/artifactory/libs-release-local'
+//
+//            credentials {
+//                username = project.property('artifactoryUsername')
+//                password = project.property('artifactoryPassword')
+//            }
+//        }
+//    }
+//}
+
 apply plugin: 'com.jfrog.artifactory'
 
 artifactory {
