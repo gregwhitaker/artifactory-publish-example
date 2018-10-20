@@ -1,3 +1,13 @@
+/*
+ * Release using the Artifactory Plugin
+ * 
+ * Requires you set the following Gradle properties:
+ *   
+ *   1. artifactoryBaseUrl - Url of Artifactory (http://artifactory.mydomain.com)
+ *   2. artifactoryUsername - Username of Artifactory deployer
+ *   3. artifactoryPassword - Password of Artifactory deployer
+ */
+
 apply plugin: 'com.jfrog.artifactory'
 
 artifactory {

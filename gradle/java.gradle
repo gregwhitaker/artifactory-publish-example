@@ -41,6 +41,7 @@ sourceSets {
     }
 }
 
+// Artifacts to Publish
 publishing {
     publications {
         mavenJava(MavenPublication) {
