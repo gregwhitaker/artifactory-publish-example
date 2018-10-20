@@ -5,6 +5,13 @@ An example of deploying artifacts of a multi-module Gradle project to Artifactor
 This repo provides examples for using both the [Artifactory Plugin](https://www.jfrog.com/confluence/display/RTF/Gradle+Artifactory+Plugin) as well as using the older
 [Maven Publish Plugin](https://docs.gradle.org/current/userguide/publishing_maven.html).
 
+## Prerequisites
+
+## Running the Example
+
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/artifactory-publish-example/issues).
+
 ## License
 MIT License
 
