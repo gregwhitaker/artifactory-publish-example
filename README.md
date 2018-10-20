@@ -22,6 +22,10 @@ Follow the steps below to deploy the artifacts to your running Artifactory insta
 2. Run the following command to deploy the artifacts to Artifactory:
 
         ./gradlew clean build artifactoryPublish
+        
+    If you wish to switch to using the `maven-publish` plugin the command to publish artifacts is:
+    
+        ./gradlew clean build publish
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/artifactory-publish-example/issues).
