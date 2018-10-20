@@ -11,15 +11,17 @@ buildScan {
 
 subprojects {
     apply plugin: 'net.saliman.properties'
+
     apply from: "${rootProject.projectDir}/gradle/artifactory.gradle"
-    
+    apply from: "${rootProject.projectDir}/gradle/java.gradle"
+
     project.version = project.hasProperty('versionQualifier') ? project.property('versionQualifier') : ''
 
     repositories {
         jcenter()
         mavenCentral()
     }
-    
+
     ext {
         springBootBomVersion = '2.0.5.RELEASE'
     }
