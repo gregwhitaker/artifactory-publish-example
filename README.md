@@ -6,6 +6,9 @@ This repo provides examples for using both the [Artifactory Plugin](https://www.
 [Maven Publish Plugin](https://docs.gradle.org/current/userguide/publishing_maven.html).
 
 ## Prerequisites
+This example requires a running Artifactory instance. If you do not already have one, start a dockerized version using these [instructions](https://www.jfrog.com/confluence/display/RTF/Installing+with+Docker).
+
+
 
 ## Running the Example
 
