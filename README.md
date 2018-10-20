@@ -8,9 +8,20 @@ This repo provides examples for using both the [Artifactory Plugin](https://www.
 ## Prerequisites
 This example requires a running Artifactory instance. If you do not already have one, start a dockerized version using these [instructions](https://www.jfrog.com/confluence/display/RTF/Installing+with+Docker).
 
-
-
 ## Running the Example
+Follow the steps below to deploy the artifacts to your running Artifactory instance:
+
+1. Set the following Gradle properties:
+
+    These properties can be set as `-P` parameters or passed in via `gradle.properties` or `gradle-local.properties`.
+    
+    * artifactoryBaseUrl - Url of Artifactory (http://artifactory.mydomain.com)
+    * artifactoryUsername - Username of Artifactory deployer
+    * artifactoryPassword - Password of Artifactory deployer
+    
+2. Run the following command to deploy the artifacts to Artifactory:
+
+        ./gradlew clean build artifactoryPublish
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/artifactory-publish-example/issues).
