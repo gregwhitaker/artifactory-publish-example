@@ -1,6 +1,4 @@
 # artifactory-publish-example
-[![Build Status](https://travis-ci.org/gregwhitaker/artifactory-publish-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/artifactory-publish-example)
-
 An example of deploying artifacts of a multi-module Gradle project to Artifactory.
 
 This repo provides examples for using both the [Artifactory Plugin](https://www.jfrog.com/confluence/display/RTF/Gradle+Artifactory+Plugin) as well as using the older
